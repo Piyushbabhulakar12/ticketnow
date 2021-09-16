@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="path-to-the-file/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			font-family: 'Poppins', sans-serif;
+		}
+		.dsds:hover
+		{
+           height: 500px;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="splide">
+
+	<div class="splide__arrows">
+    <button class="splide__arrow splide__arrow--prev" style="background: transparent;">
+      <i class="bi bi-chevron-left" style="font-size: 30px; color: #fff;"></i>
+    </button>
+    <button class="splide__arrow splide__arrow--next" style="background: transparent;">
+     <i class="bi bi-chevron-right" style="font-size: 30px; color: #fff;"></i>
+    </button>
+  </div>
+
+
+
+	<div class="splide__track">
+		<ul class="splide__list dsds" style="height: 220px;">
+			<li class="splide__slide box_hover" style="height: 110px; background: url(https://oyster.ignimgs.com/wordpress/stg.ign.com/2021/04/Shang-Chi-Poster-Marvel.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 3px;">
+				
+			</li>
+			<li class="splide__slide" style="height: 110px; background: url(https://i1.wp.com/www.seenit.co.uk/wp-content/uploads/Malignant-800.jpg?resize=800%2C1186&ssl=1); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 3px;">
+				
+			</li>
+			<li class="splide__slide" style="height: 110px; background: url(https://www.filmarena-eng.com/obrazky/film_26414_1.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 3px;">
+				
+			</li>
+			<li class="splide__slide" style="height: 110px; background: url(https://wallpapercave.com/wp/wp7694359.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 3px;">
+				
+			</li>
+			<li class="splide__slide" style="height: 110px; background: url(https://scottwilliamfoley.files.wordpress.com/2021/07/gunpowdermilkshake.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 3px;">
+				
+			</li>
+			<li class="splide__slide" style="height: 110px; background: url(https://m.media-amazon.com/images/M/MV5BOWRkOTYzZTQtMzQwNi00NDYwLTk4NjUtN2FjYTI4Y2UzM2RjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 3px;">
+				
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<script>
+	document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide', {
+	
+	gap : '1rem',
+	fixedWidth: '10rem',
+	pagination: false,
+	breakpoints: {
+		'640': {
+			perPage: 2,
+			gap    : '1rem',
+		},
+		'480': {
+			perPage: 1,
+			gap    : '1rem',
+		},
+	}
+} ).mount();
+	} );
+</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

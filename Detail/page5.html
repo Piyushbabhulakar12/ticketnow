@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--SLider-->
+<link rel="stylesheet" href="path-to-the-file/splide.min.css">
+
+<link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <title>Ticket Now</title>
+    <style type="text/css">
+      html
+      {
+        scroll-behavior: smooth;
+      }
+      body
+      {
+        font-family: 'Poppins', sans-serif;
+        background: black;
+        color: #fff;
+      }
+      /* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+      .navbar-brand
+      {
+        color: #fff;
+      }
+      .navbar-brand:hover
+      {
+        color: #fff;
+      }
+      .nav-link
+      {
+        color: #fff;
+        
+      }
+      .nav-link:hover
+      {
+        color: #fff;
+      }
+      .dsds:hover
+      {
+        -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 10px 10px 5px #888888;
+      }
+     
+.imagebox
+{
+  background-image: url(https://forbespeople.com/wp-content/uploads/2021/07/SHANG-CHI.jpg);
+  height: 120px; width: 100%; background-repeat: no-repeat; background-position: center; 
+  background-size: cover;
+  
+}
+
+.imagebox:hover
+{
+height: 150px;
+margin-top: -10px;
+width: 300px;
+position: relative;
+transition: 0.2s;
+}
+.imagebox1
+{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1T4o6MwhMM04w02TVbvfOwjGxFbGd9f4tnuWIEk5NI16hyQC7iBnoKgnoTBASKUiI00&usqp=CAU);
+  height: 120px; width: 100%; background-repeat: no-repeat; background-position: center; 
+  background-size: cover;
+  
+}
+.imagebox1:hover
+{
+height: 150px;
+margin-top: -10px;
+width: 300px;
+position: relative;
+transition: 0.2s;
+}
+.imagebox2
+{
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPao-8a3rxfXdnol_dfY4Q4Pvl9SPs7E5WpYVii-SFVJpApYnC1yIOv1KFRMNXFFSXG2E&usqp=CAU);
+  height: 120px; width: 100%; background-repeat: no-repeat; background-position: center; 
+  background-size: cover;
+}
+.imagebox2:hover
+{
+height: 150px;
+margin-top: -10px;
+width: 300px;
+position: relative;
+transition: 0.2s;
+}
+.imagebox3
+{
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlUYJwRP_NDmhi-s4ZhB2EcbRLw8NHtkougwilCeZfKRh3ssLlnH6qO4p9NqSbaShcuw&usqp=CAU);
+  height: 120px; width: 100%; background-repeat: no-repeat; background-position: center; 
+  background-size: cover;
+}
+.imagebox3:hover
+{
+height: 150px;
+margin-top: -10px;
+width: 300px;
+position: relative;
+transition: 0.2s;
+}
+.hide {
+  display: none;
+}
+.imagebox:hover + .hide
+{
+display: block;
+  color: #dfdfdf;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+.imagebox1:hover + .hide
+{
+display: block;
+  color: #dfdfdf;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+.imagebox2:hover + .hide
+{
+display: block;
+  color: #dfdfdf;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+.imagebox3:hover + .hide
+{
+display: block;
+  color: #dfdfdf;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+.lang_box
+{
+  width: 100%;
+  background: #181818; 
+  padding: 20px;
+  padding-left: 22px;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.lang_box:hover
+{
+  background: #282828;
+}
+.box-grad
+{
+  height: 480px;
+  background: #1565C0; /* fallback for old browsers */
+  background: linear-gradient(to right, #0E0D0D, #0E0D0D 38%, transparent); 
+  border-radius: 5px;
+  padding: 25px;
+  padding-top: 35px;
+}
+.box_hover:hover
+{
+  min-height: 122px;
+width: 230px;
+position: relative;
+transition: 0.1s;
+
+}
+.splide__list
+{
+  height: 500px;
+}
+.mobile
+{
+  margin-top: 0px;
+}
+@media only screen and (max-width: 600px) 
+{
+
+     .box-grad
+     {
+      display: none;
+     }
+     .splide__list
+     {
+      height: 180px;
+     }
+     .mobile
+     {
+      padding-top: 350px;
+     }
+}
+    </style>
+  </head>
+  <body>
+
+
+
+
+<nav class="navbar navbar-expand-lg shadow" style="background: black; color: #fff;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Ticket Now</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div>
+      <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bi bi-list" style="color: #fff; font-size: 21px;"></i></a>
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: black; width: 1200px;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+    <a data-bs-dismiss="offcanvas" aria-label="Close" style="cursor: pointer;"><i class="bi bi-x-lg"></i></a>
+  </div>
+  <div class="offcanvas-body">
+    
+     
+     <div class="container mt-2">
+       <h5 style="color: #b2b2b2;">New Movies</h5>
+     </div>
+
+    <div class="container mt-3" style="height: 120px;">
+      <div class="row">
+      <div class="col-md-3">
+        
+         
+            <a href="page2.html" style="text-decoration: none; color: #fff;">
+            <div class="imagebox">
+
+              
+              
+            </div>
+            
+          <div class="hide">Shang-Chi and the Legend of the Ten Rings</div>
+        </a>
+        
+      </div>
+      <div class="col-md-3">
+      
+         <a href="page3.html" style="text-decoration: none; color: #fff;">
+          <div class="imagebox1">
+              
+            </div>
+
+            <div class="hide">Bell Bottom</div>
+          </a>
+
+      </div>
+      <div class="col-md-3">
+           
+           <a href="page4.html" style="text-decoration: none; color: #fff;">
+           <div class="imagebox2">
+              
+            </div>
+            
+            <div class="hide">Malignant</div>
+          </a>
+      
+      </div>
+      <div class="col-md-3">
+        
+        <a href="page5.html" style="text-decoration: none; color: #fff;">
+        <div class="imagebox3">
+              
+            </div>
+         
+         <div class="hide">Fast and Furious 9</div>
+       </a>
+
+
+      </div>
+    </div>
+
+    </div>
+    <div class="container mt-5 mobile">
+      <div class="row">
+      <h5 style="color: #b2b2b2;">Movies</h5>
+    </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row">
+         <div class="col-md-3 mt-2">
+            
+            <div class="lang_box">
+              English
+            </div>
+
+         </div>
+         <div class="col-md-3 mt-2">
+
+          <div class="lang_box">
+              Hindi
+            </div>
+           
+         </div>
+         <div class="col-md-3 mt-2">
+
+
+          <div class="lang_box">
+              Punjabi
+            </div>
+           
+         </div>
+         <div class="col-md-3 mt-2">
+
+          <div class="lang_box">
+              Telugu
+            </div>
+           
+         </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row">
+         <div class="col-md-3 mt-2">
+            
+            <div class="lang_box">
+              Tamil
+            </div>
+
+         </div>
+         <div class="col-md-3 mt-2">
+
+          <div class="lang_box">
+              Marathi
+            </div>
+           
+         </div>
+         <div class="col-md-3 mt-2">
+
+
+          <div class="lang_box">
+              Kannada
+            </div>
+           
+         </div>
+         <div class="col-md-3 mt-2">
+
+          <div class="lang_box">
+              Malayalam
+            </div>
+           
+         </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+      <div class="col-md-4 mt-3">
+
+         <h6 style="color: #b2b2b2;">Upcoming Movies</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Indian 2</h6>
+         <h6 style="font-size: 12px;" class="mt-3">KGF Chapter 2</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Dhruva Natchathiram</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Avatar 2</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Thalaivi</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Vikram</h6>
+
+      </div>
+      <div class="col-md-4 mt-3">
+
+        <h6 style="color: #b2b2b2;">Now Playing</h6>
+        <h6 style="font-size: 12px;" class="mt-3">Fast and Furious 9</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Vakeel Saab</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Shang-Chi and the Legend of the Ten Rings</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Bell Bottom</h6>
+         <h6 style="font-size: 12px;" class="mt-3">The Conjuring The Devil Made Me Do It</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Raja Raja Chora</h6>
+
+
+        
+      </div>
+      <div class="col-md-4 mt-3">
+
+        <h6 style="color: #b2b2b2;">Next Change</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Laabam</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Seetimaarr</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Thalaivi</h6>
+         <h6 style="font-size: 12px;" class="mt-3">Malignant</h6>
+
+        
+      </div>
+    </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-8">
+          <button class="btn"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+          <button class="btn"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+          <button class="btn"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+          <button class="btn"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+        </div>
+        <div class="col-md-4">
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+  
+  <div class="splide__slide" style="background: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/f9.jpg); background-repeat: no-repeat;background-position: right; background-size: contain; margin: 15px; border-radius: 5px;">
+        
+
+        <div class="box-grad">
+         
+          <div style="width: 38%; margin-top: 65px;">
+            <h2>Fast and Furious 9</h2>
+            <p style="font-size: 13px;">English / Action Crime Adventure / 2021 | 2 hrs 12 mins</p>
+         <p style="font-size: 13px;">An action adventure film directed by Justin Lin, starring John Cena and Vin Diesel in the lead roles.</p>
+         <p style="font-size: 13px;">Actor - John Cena Michelle Rodriguez Vin Diesel</p>
+         <p style="font-size: 13px;">Director - Justin Lin</p>
+          </div>
+          
+        </div>
+        
+
+         
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid mt-4">
+  
+  <h4>Trailor</h4>
+
+    <div class="row mt-3">
+    <a href="https://youtu.be/FqAjVAf5fNA" target="_blank">
+      <div class="col-md-2" style="background-image: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/f9.jpg); cursor: pointer; height: 120px; background-repeat: no-repeat; background-size: cover; border-radius: 5px;">
+      
+    </div>
+    </a>
+  </div>
+
+
+</div>
+
+<div class="container-fluid mt-4">
+  <h4>Now Playing</h4>
+</div>
+
+  <div class="container-fluid">
+    <iframe src="../slider.html" seamless style="width: 100%; height: 160px;" class="mt-2"></iframe>
+  </div>
+
+
+<div class="container-fluid mt-1">
+  <h4>Coming Soon</h4>
+</div>
+
+<div class="container-fluid">
+<iframe src="../slider2.html" seamless style="width: 100%; height: 250px;" class="mt-2"></iframe>
+</div>
+
+
+<footer style="background: #101010; padding: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>BookTicket</h3>
+      </div>
+      <div class="col-md-3 mt-2">
+        <h6 style="color: gray;">About Us</h6>
+        <p style="font-size: 12px; margin-top: 15px;">Blog</p>
+        <p style="font-size: 12px;">Website</p>
+        <p style="font-size: 12px;">Contact Us</p>
+      </div>
+      <div class="col-md-3 mt-2">
+        <h6 style="color: gray;">Browse All</h6>
+        <p style="font-size: 12px; margin-top: 15px;">Now Showing</p>
+        <p style="font-size: 12px;">Coming Soon</p>
+        <p style="font-size: 12px;">All movies</p>
+        <p style="font-size: 12px;">Cinemas</p>
+      </div>
+      <div class="col-md-3 mt-2">
+        <h6 style="color: gray;">Enquiries</h6>
+        <p style="font-size: 12px; margin-top: 15px;">Advertising</p>
+        <p style="font-size: 12px;">Support</p>
+        <p style="font-size: 12px;">Technical Support</p>
+      </div>
+    </div>
+
+<center>
+         <div class="mt-4">
+           <button class="btn"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+          <button class="btn"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+          <button class="btn"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+          <button class="btn"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 18px; color: #fff;"></i></button>
+         </div>
+</center>
+     
+
+  </div>
+</footer>
+
+
+
+
+  <script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.splide' , {
+      type   : 'loop',
+  padding: {
+    right: '5rem',
+    left : '5rem',
+  },
+    } ).mount();
+
+
+
+  } );
+</script>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>
